@@ -150,3 +150,14 @@ class loggerNoSQL(unittest.TestCase):
             return {"message": "Ok", "result": self.__listOfLogs}, 200
         except AssertionError as ae:
             return {"message": "Error", "result": f"[{ae}]"}, 500
+
+class kindOfLog:
+    
+    @staticmethod
+    def ERROR():
+        return 'ERROR'
+
+    @staticmethod
+    def INFO():
+        return 'INFO'
+
